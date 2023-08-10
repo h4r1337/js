@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Check Age</title>
+  </head>
+  <body>
+    <h2>Are you eligible to vote?</h2>
+    <form name="myForm">
+      <input type="text" name="user" placeholder="Enter your name">
+      <br><br>
+      <input type="text" name="age" placeholder="Enter your age">
+      <br><br>
+      <input type="button" value="Click here" onclick="test()">
+    </form>
+    <script>
+    function test() {
+      var name = document.myForm.user.value
+      var age = document.myForm.age.value
+      if (age >= 18) {
+        document.write("You can vote " + name)
+      } else {
+        document.write("Sorry you can't vote " + name)
+      }
+    }
+    </script>
+  </body>
+</html>
